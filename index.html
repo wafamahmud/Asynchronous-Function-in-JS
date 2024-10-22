@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2><mark>Asynchronous</mark>Function in JS</h2>
+        <h1 id="result"></h1>
+        <script>
+            async function mult(a, b){
+                let reply = await a*b;
+                display(reply);
+            }
+            function display(some){
+                document.getElementById("result").innerHTML= some;
+
+            }
+
+            mult(4, 73);
+        </script>
+    </body>
+</html>
